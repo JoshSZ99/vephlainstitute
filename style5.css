@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+  }
+  header {
+    display: flex;
+    gap: 45px;
+    background-color: #161616;
+  }
+  header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 38px;
+  }
+  header ul a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  header img {
+    width: 160px;
+    height: 80px;
+  }
+  header ul a:hover {
+    color: gray;
+  }
+  .flink {
+    color: #ed212c;
+    margin-left: 0;
+  }
+  .flink:hover {
+    color: white;
+  }
+  .empty {
+    width: 160px;
+  }
+  .button1 {
+    background: none;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .button1:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  .button2 {
+    background: #ed212c;
+    border: 1px solid #ed212c;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .button2:hover {
+    background: none;
+    border: 1px solid white;
+  }
+  header button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 23px;
+    padding: 10px 7px;
+    color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    header {
+      display: block;
+    }
+    header ul {
+      gap: 5px;
+      margin-left: 10px;
+    }
+    header ul a {
+      font-size: 8px;
+    }
+    header button {
+      font-size: 8px;
+      padding: 4px 3px;
+      margin-left: 18%;
+      margin-bottom: 15px;
+    }
+    header img {
+      margin-left: 30%;
+      margin-bottom: -40px;
+    }
+  }
+  
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .empty {
+      width: 350px;
+    }
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .empty {
+      width: 450px;
+    }
+  }
+  @media (min-width: 1921px) {
+    .empty {
+      width: 800px;
+    }
+  }
+  
+  /* main style */
+  .background-container {
+    background: rgb(19, 19, 56);
+  }
+  .bg-image {
+    background-image: url("images/img2.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+  }
+  .bg-text {
+    position: absolute;
+    text-align: center;
+    top: 260px;
+    left: 390px;
+  }
+  .bg-text h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .bg-text p {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    word-spacing: 3px;
+  }
+  .bg-text button {
+    border: 1px solid white;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .bg-text button:hover {
+    color: gray;
+    border: 1px solid gray;
+  }
+  @media (max-width: 600px) {
+    .bg-text {
+      position: absolute;
+      text-align: center;
+      top: 230px;
+      left: 20px;
+    }
+    .bg-text h1 {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .bg-text p {
+      color: white;
+      text-align: center;
+      font-size: 13px;
+      word-spacing: 1px;
+    }
+    .bg-text button {
+      border: 1px solid white;
+      background: none;
+      padding: 6px;
+      border-radius: 10px;
+      color: white;
+      font-size: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    .bg-image {
+      background-image: url("images/img2.jpg");
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    .bg-text {
+      position: absolute;
+      text-align: center;
+      top: 260px;
+      left: 30%;
+    }
+  }
+  
+  .second-sec {
+    margin: 65px 75px 15px 75px;
+  }
+  .mid-cont {
+    background-color: rgba(252, 206, 214, 0.1);
+    padding: 35px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 60px;
+    border: 1px solid rgba(252, 206, 214, 0.3);
+    box-shadow: 2px 3px 5px rgb(218, 216, 216);
+  }
+  .mid-cont img {
+    width: 450px;
+    height: 320px;
+    border-radius: 15px;
+  }
+  .mid-cont h2 {
+    margin: 25px 0px;
+  }
+  .mid-cont h3 {
+    font-size: 30px;
+    padding-top: 8px;
+  }
+  .mid-cont h4 {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .mid-cont h4 img {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  .mid-cont button {
+    float: right;
+    margin-top: 70px;
+    border-radius: 10px;
+    padding: 10px 25px 10px 15px;
+    color: blue;
+    border: 1px solid blue;
+    background: none;
+    cursor: pointer;
+  }
+  .mid-cont button:hover {
+    opacity: 0.6;
+  }
+  @media (max-width: 600px) {
+    .second-sec {
+      margin: 10px 25px 15px 25px;
+    }
+    .mid-cont {
+      background-color: rgba(252, 206, 214, 0.1);
+      padding: 10px;
+      padding-bottom: 40px;
+      border-radius: 10px;
+      display: block;
+      /* grid-template-columns: 50% 50%; */
+      margin-top: 15px;
+      border: 1px solid rgba(252, 206, 214, 0.3);
+      box-shadow: 2px 3px 5px rgb(218, 216, 216);
+    }
+    .mid-cont img {
+      width: 290px;
+      height: 220px;
+      border-radius: 15px;
+    }
+    .mid-cont h2 {
+      margin: 10px 0px;
+      font-size: 15px;
+    }
+    .mid-cont h3 {
+      font-size: 15px;
+      padding-top: 8px;
+    }
+    .mid-cont h4 {
+      padding-left: 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin-top: 10px;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+    .mid-cont h4 img {
+      height: 15px;
+      width: 15px;
+      float: right;
+      margin-right: 15px;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+    .mid-cont button {
+      float: right;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 5px 10px 5px 10px;
+      color: blue;
+      border: 1px solid blue;
+      background: none;
+      cursor: pointer;
+      font-size: 8px;
+    }
+    .mid-cont button:hover {
+      opacity: 0.6;
+    }
+  }
+  
+  .third-sec {
+    margin: 65px 75px 15px 75px;
+  }
+  .third-sec h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .resource {
+    display: grid;
+    grid-template-columns: 34% 35% 34%;
+    margin-top: 20px;
+  }
+  .resource h4 {
+    margin-top: 10px;
+  }
+  .resource p {
+    margin-top: 10px;
+  }
+  @media (max-width: 600px) {
+    .third-sec {
+      margin: 20px 15px 7px 15px;
+    }
+    .third-sec h1 {
+      text-align: center;
+      font-size: 18px;
+    }
+    .resource {
+      display: block;
+      /* grid-template-columns: 34% 35% 34%; */
+      margin-top: 20px;
+    }
+    .resource h4 {
+      margin-top: 0px;
+      font-size: 14px;
+    }
+    .resource p {
+      margin-top: 2px;
+      margin-bottom: 40px;
+      font-size: 11px;
+    }
+    .resource img {
+      width: 350px;
+      height: 280px;
+    }
+  }
+  
+  /* footer style */
+  footer {
+    background-color: rgb(2, 2, 31);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 15% 12% 12% 22% 12% 12% 15%;
+    text-align: center;
+    padding: 70px 140px 40px 140px;
+  }
+  .grid a {
+    color: white;
+    text-decoration: none;
+  }
+  .grid a:hover {
+    opacity: 0.4;
+  }
+  .grid img {
+    margin-top: -20px;
+  }
+  .divider {
+    margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0.3;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 5px 35px 5px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: gray;
+    color: rgb(2, 2, 31);
+    border-radius: 50%;
+  }
+  .fa-instagram {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .privacy {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+  }
+  .privacy a {
+    color: gray;
+    text-decoration: none;
+  }
+  .privacy a:hover {
+    opacity: 0.5;
+  }
+  @media (max-width: 600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 30% 35% 35%;
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+    }
+    .grid a {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      margin-right: 25px;
+    }
+    .grid a:hover {
+      opacity: 0.4;
+    }
+    .grid img {
+      margin-top: -20px;
+      width: 50px;
+      height: 20px;
+    }
+    .divider {
+      margin-left: 20px;
+      margin-right: 20px;
+      opacity: 0.3;
+    }
+  
+    .fa {
+      font-size: 6px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px 5px 15px 5px;
+    }
+    .privacy {
+      font-size: 10px;
+    }
+  }
+  

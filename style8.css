@@ -1,0 +1,517 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+  }
+  header {
+    display: flex;
+    gap: 45px;
+    background-color: #161616;
+  }
+  header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 38px;
+  }
+  header ul a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  header img {
+    width: 160px;
+    height: 80px;
+  }
+  header ul a:hover {
+    color: gray;
+  }
+  .flink {
+    color: #ed212c;
+    margin-left: 0;
+  }
+  .flink:hover {
+    color: white;
+  }
+  .empty {
+    width: 160px;
+  }
+  .button1 {
+    background: none;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .button1:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  .button2 {
+    background: #ed212c;
+    border: 1px solid #ed212c;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .button2:hover {
+    background: none;
+    border: 1px solid white;
+  }
+  header button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 23px;
+    padding: 10px 7px;
+    color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    header {
+      display: block;
+    }
+    header ul {
+      gap: 5px;
+      margin-left: 10px;
+    }
+    header ul a {
+      font-size: 8px;
+    }
+    header button {
+      font-size: 8px;
+      padding: 4px 3px;
+      margin-left: 18%;
+      margin-bottom: 15px;
+    }
+    header img {
+      margin-left: 30%;
+      margin-bottom: -40px;
+    }
+  }
+  
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .empty {
+      width: 350px;
+    }
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .empty {
+      width: 450px;
+    }
+  }
+  @media (min-width: 1921px) {
+    .empty {
+      width: 800px;
+    }
+  }
+  
+  .first-sec {
+    margin: 0px 150px 30px 150px;
+    background-color: black;
+  }
+  .test {
+    background-image: url("images/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    opacity: 0.2;
+  }
+  .test2 h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 35%;
+    font-size: 40px;
+  }
+  @media (max-width: 600px) {
+    .first-sec {
+      margin: 0px 50px 10px 30px;
+      background-color: rgb(18, 18, 39);
+    }
+    .test {
+      background-image: url("images/img1.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      opacity: 0.3;
+    }
+    .test2 h1 {
+      position: absolute;
+      text-align: center;
+      color: white;
+      top: 30%;
+      left: 23%;
+      font-size: 18px;
+    }
+  }
+  
+  .second-sec {
+    margin: 40px 150px 30px 150px;
+  }
+  .second-sec h4 {
+    margin-bottom: 20px;
+    word-spacing: 1px;
+    font-size: 20px;
+  }
+  .test-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* width: 70%; */
+  }
+  .input1 {
+    width: 475px;
+    margin-right: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid gray;
+  }
+  .input2 {
+    width: 475px;
+    margin-left: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid gray;
+  }
+  .sub {
+    background-color: #ed212c;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ed212c;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 490px;
+    cursor: pointer;
+  }
+  .sub:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+    background-color: white;
+  }
+  .lab1 {
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  .lab2 {
+    font-size: 13px;
+  }
+  @media (max-width: 600px) {
+    .second-sec {
+      margin: 10px 20px 10px 30px;
+    }
+    .second-sec h4 {
+      margin-bottom: 20px;
+      font-size: 9px;
+    }
+    .test-form {
+      display: block;
+      /* grid-template-columns: auto auto; */
+      /* width: 70%; */
+    }
+    .input1 {
+      width: 310px;
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid gray;
+      margin-bottom: 20px;
+    }
+    .input2 {
+      width: 310px;
+      padding: 5px;
+      margin-left: 0;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid gray;
+    }
+    .lab1 {
+      margin-left: 0;
+      font-size: 9px;
+    }
+    .lab2 {
+      font-size: 9px;
+    }
+    .sub {
+      background-color: #ed212c;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ed212c;
+      border-radius: 7px;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      margin-left: -10px;
+      cursor: pointer;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .input1 {
+      width: 570px;
+    }
+    .input2 {
+      width: 570px;
+    }
+    .sub {
+      background-color: #ed212c;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ed212c;
+      border-radius: 7px;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      margin-left: 93%;
+      cursor: pointer;
+    }
+  }
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .input1 {
+      width: 660px;
+    }
+    .input2 {
+      width: 660px;
+    }
+    .sub {
+      background-color: #ed212c;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ed212c;
+      border-radius: 7px;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      margin-left: 93%;
+      cursor: pointer;
+    }
+  }
+  
+  .third-sec {
+    position: absolute;
+    top: 0px;
+    padding-top: 80px;
+    padding-bottom: 360px;
+    padding-left: 400px;
+    padding-right: 400px;
+    left: 0px;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    opacity: 0.7;
+  }
+  .thirdsubsec {
+    margin-top: 85px;
+    background-color: white;
+    padding-left: 160px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    z-index: -1;
+  }
+  .thirdsubsec div i {
+    font-size: 250px;
+    color: rgb(131, 131, 247);
+  }
+  .thirdsubsec div i:hover {
+    color: rgb(131, 131, 247);
+  }
+  .thirdsubsec div h2 {
+    margin-top: -20px;
+    color: black;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  .thirdsubsec div p {
+    color: black;
+    margin-left: -140px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .thirdsubsec div a {
+    color: black;
+    font-size: 14px;
+  }
+  .thirdsubsec div a:active {
+    color: blue;
+    font-size: 14px;
+  }
+  @media (max-width: 600px) {
+    .third-sec {
+      padding-top: 30px;
+      padding-bottom: 363px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .thirdsubsec {
+      margin-top: 120px;
+      background-color: white;
+      padding-left: 50px;
+      border-radius: 15px;
+      padding-bottom: 10px;
+      z-index: -1;
+    }
+    .thirdsubsec div i {
+      font-size: 100px;
+      color: rgb(131, 131, 247);
+    }
+    .thirdsubsec div i:hover {
+      color: rgb(131, 131, 247);
+    }
+    .thirdsubsec div h2 {
+      margin-top: -10px;
+      color: black;
+      margin-left: 4px;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .thirdsubsec div p {
+      color: black;
+      margin-left: -25px;
+      font-size: 9px;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+    .thirdsubsec div a {
+      color: black;
+      font-size: 10px;
+    }
+    .thirdsubsec div a:active {
+      color: blue;
+      font-size: 10px;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .third-sec {
+      position: absolute;
+      top: 0px;
+      padding-top: 80px;
+      padding-bottom: 360px;
+      padding-left: 500px;
+      padding-right: 450px;
+      left: 0px;
+      z-index: 2;
+      background-color: black;
+      width: 100%;
+      opacity: 0.7;
+    }
+  }
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .third-sec {
+      position: absolute;
+      top: 0px;
+      padding-top: 80px;
+      padding-bottom: 360px;
+      padding-left: 550px;
+      padding-right: 580px;
+      left: 0px;
+      z-index: 2;
+      background-color: black;
+      width: 100%;
+      opacity: 0.7;
+    }
+  }
+  
+  /* footer style */
+  footer {
+    background-color: rgb(2, 2, 31);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 15% 12% 12% 22% 12% 12% 15%;
+    text-align: center;
+    padding: 70px 140px 40px 140px;
+  }
+  .grid a {
+    color: white;
+    text-decoration: none;
+  }
+  .grid a:hover {
+    opacity: 0.4;
+  }
+  .grid img {
+    margin-top: -20px;
+  }
+  .divider {
+    margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0.3;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 5px 35px 5px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: gray;
+    color: rgb(2, 2, 31);
+    border-radius: 50%;
+  }
+  .fa-instagram {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .privacy {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+  }
+  .privacy a {
+    color: gray;
+    text-decoration: none;
+  }
+  .privacy a:hover {
+    opacity: 0.5;
+  }
+  @media (max-width: 600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 30% 35% 35%;
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+    }
+    .grid a {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      margin-right: 25px;
+    }
+    .grid a:hover {
+      opacity: 0.4;
+    }
+    .grid img {
+      margin-top: -20px;
+      width: 50px;
+      height: 20px;
+    }
+    .divider {
+      margin-left: 20px;
+      margin-right: 20px;
+      opacity: 0.3;
+    }
+  
+    .fa {
+      font-size: 6px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px 5px 15px 5px;
+    }
+    .privacy {
+      font-size: 10px;
+    }
+  }
+  

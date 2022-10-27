@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vephla Group</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/photo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+
+      <div>
+        <img src="images/logo.png" alt="logo" />
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="index.html" class="flink">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="courses.html">Courses & Plans</a></li>
+          <li><a href="#">Free Resources</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="empty"></div>
+
+      <div>
+        <button class="button1" onclick="signIn()">Sign In</button>
+        <button class="button2" onclick="register()">Register</button>
+      </div>
+    </header>
+
+    <section class="cont">
+      <div class="hero">
+        <div>
+          <h1>Welcome to Vephla <br />Training Institute</h1>
+        </div>
+        <div><p>Building a generation of innovative tech experts.</p></div>
+      </div>
+
+      <div class="input-icons">
+        <i class="fa fa-search icon"></i>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search for a course"
+        />
+        <button>Enter</button>
+      </div>
+
+      <div class="acc">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </section>
+
+    <section class="secondsec">
+      <div><h1>Popular Courses</h1></div>
+      <div class="grid2">
+        <div class="grid1">
+          <div><img src="images/course1.png" alt="" /></div>
+          <h2>UI/UX Design</h2>
+          <p>Designing the user ineterface and <br />user experience.</p>
+          <p style="font-weight: bolder">&#8358; 90,000</p>
+          <p style="font-weight: bolder; color: rgb(220, 220, 220)">
+            <s>&#8358; 150,000</s>
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-full checked"></span>
+        </div>
+
+        <div class="grid1">
+          <div><img src="images/course2.png" alt="" /></div>
+          <h2>Frontend Development</h2>
+          <p>Coding out the user interface of <br />websites.</p>
+          <p style="font-weight: bolder">&#8358; 90,000</p>
+          <p style="font-weight: bolder; color: rgb(220, 220, 220)">
+            <s>&#8358; 150,000</s>
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-full checked"></span>
+        </div>
+
+        <div class="grid1">
+          <div><img src="images/course3.png" alt="" /></div>
+          <h2>Data Analytics</h2>
+          <p>Presentation and visualization <br />of data.</p>
+          <p style="font-weight: bolder">&#8358; 90,000</p>
+          <p style="font-weight: bolder; color: rgb(220, 220, 220)">
+            <s>&#8358; 150,000</s>
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-full checked"></span>
+        </div>
+      </div>
+      <center>
+        <div><button onclick="viewAllCourses()">View All Courses</button></div>
+      </center>
+    </section>
+
+    <section class="thirdsec">
+      <div>
+        <h3>
+          We are a brand that strives for excellence in the<br />
+          tech industry. <br /><br />We play our part by ensuring that students
+          <br />
+          receive standard education and mentoring. <br /><br />
+          <button onclick="aboutUs()">Read More</button>
+        </h3>
+      </div>
+      <div>
+        <img src="images/img3.jpg" alt="" />
+      </div>
+    </section>
+
+    <center>
+      <section class="forthsec">
+        <div><img src="images/map.png" alt="" /></div>
+        <div><img src="images/cohort.png" alt="" /></div>
+        <div><img src="images/student.png" alt="" /></div>
+      </section>
+    </center>
+
+    <section class="fifthsec">
+      <div>
+        <h1>Student Testimonials</h1>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1665949695/testimonial1_exx3ja.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666731115/testimonials-card_cgpiiw.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666731115/testimonials-card_1_rqbwxx.jpg"
+            style="width: 15%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666731115/testimonials-card_cgpiiw.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1665949695/testimonial1_exx3ja.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1665949696/testimonial3_vwjcjq.jpg"
+            style="width: 15%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1665949695/testimonial2_h1r08q.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666731115/testimonials-card_cgpiiw.jpg"
+            style="width: 36%"
+          />
+          <img
+            src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666731115/testimonials-card_1_rqbwxx.jpg"
+            style="width: 15%"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="slideshow-container2">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div> -->
+    </section>
+
+    <section class="sixthsec">
+      <h2>Why Choose Us?</h2>
+      <h5>Vephla provides world class tech training on live projects</h5>
+      <center>
+        <div class="sixthsubsec">
+          <div>
+            <img src="images/clock.png" alt="" />
+            <h4>Flexible Schedules</h4>
+            <p>We offer flexible course plans <br />to suit you.</p>
+          </div>
+          <div>
+            <img src="images/desktop.png" alt="" />
+            <h4>Interactive Classes</h4>
+            <p>Live online interactive sessions<br />on tasks and projects.</p>
+          </div>
+          <div>
+            <img src="images/tutor.png" alt="" />
+            <h4>Experienced Tutors</h4>
+            <p>Learn from experienced tech<br />experts.</p>
+          </div>
+          <div>
+            <img src="images/play.png" alt="" />
+            <h4>Continuous Access</h4>
+            <p>24/7 access to videos and <br />training materials.</p>
+          </div>
+        </div>
+      </center>
+    </section>
+
+    <section class="seventhsec">
+      <h1>Frequently Asked Questions</h1>
+      <p>How do I transition to tech? <img src="images/cang.png" alt="" /></p>
+      <p>
+        How do I pick a course that suits me best?
+        <img src="images/cang.png" alt="" />
+      </p>
+      <p>Is tech all about coding? <img src="images/cang.png" alt="" /></p>
+      <p>
+        What are the benefits of having a tech skill?
+        <img src="images/cang.png" alt="" />
+      </p>
+      <p>
+        How soon after my training can I get an entry level role?
+        <img src="images/cang.png" alt="" />
+      </p>
+      <p>Is tech only for the youths? <img src="images/cang.png" alt="" /></p>
+    </section>
+
+    <section class="eightsec">
+      <h4>Start your journey into tech with us today</h4>
+      <center><button onclick="register()">Register</button></center>
+    </section>
+
+    <section class="ninthsec">
+      <h1>Newsletter</h1>
+      <p>
+        Subscribe to our newsletter to get important and industry leading
+        updates on new courses we
+      </p>
+      <p>offer and also huge discounts on some of out courses.</p>
+      <center>
+        <i class="fa fa-envelope icon2"></i>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Johndoe@gmail.com"
+        />
+        <button>Subscribe</button>
+      </center>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div></div>
+        <div><a href="courses.html">Course Plans</a></div>
+        <div><a href="#">Resources</a></div>
+        <div><img src="images/logo txt 1.png" alt="" /></div>
+        <div><a href="aboutus.html">About Us</a></div>
+        <div><a href="aboutus.html">Our Tutors</a></div>
+        <div></div>
+      </div>
+      <div class="divider"><hr /></div>
+      <center>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100086155039228"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://instagram.com/vephla.ng?igshid=YmMyMTA2M2Y="
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://twitter.com/VephlaHQ?t=eWsd6NLj4toXHiRJcU8W3w&s=08"
+            class="fa fa-twitter"
+          ></a>
+        </div>
+      </center>
+      <div class="privacy">
+        <p>&#169; 2010 - 2020 <a href="#">Privacy & Terms</a></p>
+      </div>
+    </footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function signIn() {
+        window.location.href = "signinpage.html";
+      }
+      function register() {
+        window.location.href = "registerpage.html";
+      }
+      function viewAllCourses() {
+        window.location.href = "courses.html";
+      }
+      function aboutUs() {
+        window.location.href = "aboutus.html";
+      }
+    </script>
+  </body>
+</html>

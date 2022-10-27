@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vephla Group</title>
+    <link rel="stylesheet" href="style7.css" />
+    <link rel="shortcut icon" href="images/photo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+
+      <div>
+        <img src="images/logo.png" alt="logo" />
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="index.html" class="flink">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="courses.html">Courses & Plans</a></li>
+          <li><a href="#">Free Resources</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="empty"></div>
+
+      <div>
+        <button class="button1" onclick="signIn()">Sign In</button>
+        <button class="button2" onclick="register()">Register</button>
+      </div>
+    </header>
+
+    <section>
+      <h4>
+        Please note that there are no correct answers or timeline to the
+        questions in this test; so please <br />take your time and answer as
+        honestly as possible. Good luck!
+      </h4>
+      <form action="test3.html">
+        <ol>
+          <div>
+            <li>
+              Are you familiar with any design tool like canva, photoshop and
+              corel draw?
+            </li>
+            <input type="radio" name="design" id="I-am" value="I-am" required />
+            <label for="I-am">I am</label><br />
+            <input
+              type="radio"
+              name="design"
+              id="I-am-not"
+              value="I-am-not"
+              required
+            />
+            <label for="I-am-not">I'm not</label><br />
+          </div>
+
+          <div>
+            <li>Do you like working with numbers?</li>
+            <input
+              type="radio"
+              name="numbers"
+              id="I-do"
+              value="I-do"
+              required
+            />
+            <label for="I-do">I do</label><br />
+            <input
+              type="radio"
+              name="numbers"
+              id="I-do-not"
+              value="I-do-not"
+              required
+            />
+            <label for="I-do-not">I don't</label><br />
+          </div>
+
+          <div>
+            <li>
+              Are you empathetic and able to understand the needs and pains of
+              others?
+            </li>
+            <input
+              type="radio"
+              name="empathy"
+              id="I-am"
+              value="I-am"
+              required
+            />
+            <label for="I-am">I am</label>
+            <input
+              type="radio"
+              name="empathy"
+              id="I-am-not"
+              value="I-am-not"
+              class="opti"
+              required
+            />
+            <label for="I-am-not">I'm not</label><br />
+            <input
+              type="radio"
+              name="empathy"
+              id="not-sure"
+              value="not-sure"
+              required
+            />
+            <label for="not-sure">I'm not sure</label>
+          </div>
+
+          <div>
+            <li>Do you like organizing and creating content?</li>
+            <input
+              type="radio"
+              name="content"
+              id="I-do"
+              value="I-do"
+              required
+            />
+            <label for="I-do">I do</label>
+            <input
+              type="radio"
+              name="content"
+              id="I-do-not"
+              value="I-do-not"
+              class="opti"
+              required
+            />
+            <label for="I-do-not">I don't</label><br />
+            <input
+              type="radio"
+              name="content"
+              id="not-sure"
+              value="not-sure"
+              required
+            />
+            <label for="not-sure">I don't know but I'd love to</label>
+          </div>
+
+          <div>
+            <li>
+              How good are you at communicating, creating brand messages and
+              story telling?
+            </li>
+            <input
+              type="radio"
+              name="communicating"
+              id="fair"
+              value="fair"
+              required
+            />
+            <label for="fair">Fair</label>
+            <input
+              type="radio"
+              name="communicating"
+              id="good"
+              value="good"
+              class="opti"
+              required
+            />
+            <label for="good">Good</label><br />
+            <input
+              type="radio"
+              name="communicating"
+              id="average"
+              value="average"
+              required
+            />
+            <label for="average">Average</label>
+            <input
+              type="radio"
+              name="communicating"
+              id="excellent"
+              value="excellent"
+              class="excel"
+              required
+            />
+            <label for="excellent">Excellent</label>
+          </div>
+
+          <div>
+            <li>
+              Are you interested in the development of the user interface of
+              websites and mobile applications?
+            </li>
+            <input
+              type="radio"
+              name="development"
+              id="I-am"
+              value="I-am"
+              required
+            />
+            <label for="I-am">I am</label>
+            <input
+              type="radio"
+              name="development"
+              id="I-am-not"
+              value="I-am-not"
+              class="opti"
+              required
+            />
+            <label for="I-am-not">I'm not</label><br />
+            <input
+              type="radio"
+              name="development"
+              id="not-sure"
+              value="not-sure"
+              required
+            />
+            <label for="not-sure">I'm not sure</label>
+          </div>
+
+          <div>
+            <li>
+              Do you enjoy visualization and making sense of data through
+              computing?
+            </li>
+            <input type="radio" name="data" id="I-do" value="I-do" required />
+            <label for="I-do">I do</label><br />
+            <input
+              type="radio"
+              name="data"
+              id="I-do-not"
+              value="I-do-not"
+              required
+            />
+            <label for="I-do-not">I don't</label><br />
+          </div>
+
+          <div>
+            <li>
+              Are you versatile in Microsoft Excel or are you willing to learn?
+            </li>
+            <input type="radio" name="excel" id="I-am" value="I-am" required />
+            <label for="I-am">I am</label>
+            <input
+              type="radio"
+              name="excel"
+              id="I-am-not"
+              value="I-am-not"
+              class="opti"
+              required
+            />
+            <label for="I-am-not">I'm not interested</label><br />
+            <input
+              type="radio"
+              name="excel"
+              id="not-really"
+              value="not-really"
+              required
+            />
+            <label for="not-really">Not really but I'm willing to learn</label>
+          </div>
+
+          <div>
+            <li>Are you easily overwhelmed by complex ideas?</li>
+            <input
+              type="radio"
+              name="overwhelmed"
+              id="I-am-not"
+              value="I-am-not"
+              required
+            />
+            <label for="I-am-not">I am not</label>
+            <input
+              type="radio"
+              name="overwhelmed"
+              id="i-do-not-mind"
+              value="i-do-not-mind"
+              class="excel"
+              required
+            />
+            <label for="i-do-not-mind">I don't mind</label><br />
+            <input
+              type="radio"
+              name="overwhelmed"
+              id="I-avoid"
+              value="I-avoid"
+              required
+            />
+            <label for="I-avoid">I avoid complex ideas</label>
+          </div>
+
+          <div>
+            <li>
+              Are you familiar with the basic of computer programming? Are you
+              willing to learn?
+            </li>
+            <input type="radio" name="excel" id="I-am" value="I-am" required />
+            <label for="I-am">I am</label>
+            <input
+              type="radio"
+              name="excel"
+              id="I-am-not"
+              value="I-am-not"
+              class="opti"
+              required
+            />
+            <label for="I-am-not">I'm not interested</label><br />
+            <input
+              type="radio"
+              name="excel"
+              id="not-really"
+              value="not-really"
+              required
+            />
+            <label for="not-really">Not really but I'm willing to learn</label>
+          </div>
+
+          <div>
+            <li>
+              How good are you at public speaking and making presentations?
+            </li>
+            <input
+              type="radio"
+              name="speaking"
+              id="fair"
+              value="fair"
+              required
+            />
+            <label for="fair">Fair</label>
+            <input
+              type="radio"
+              name="speaking"
+              id="good"
+              value="good"
+              class="opti"
+              required
+            />
+            <label for="good">Good</label><br />
+            <input
+              type="radio"
+              name="speaking"
+              id="average"
+              value="average"
+              required
+            />
+            <label for="average">Average</label>
+            <input
+              type="radio"
+              name="speaking"
+              id="excellent"
+              value="excellent"
+              class="excel"
+              required
+            />
+            <label for="excellent">Excellent</label>
+          </div>
+
+          <div>
+            <li>Are you able to creatively interprete the ideas of others?</li>
+            <input
+              type="radio"
+              name="development"
+              id="I-am"
+              value="I-am"
+              required
+            />
+            <label for="I-am">I am</label>
+            <input
+              type="radio"
+              name="development"
+              id="I-am-not"
+              value="I-am-not"
+              class="opti"
+              required
+            />
+            <label for="I-am-not">I'm not</label><br />
+            <input
+              type="radio"
+              name="development"
+              id="not-sure"
+              value="not-sure"
+              required
+            />
+            <label for="not-sure">I'm not sure</label>
+          </div>
+
+          <div>
+            <li>Do you have an interest in writing codes?</li>
+            <input
+              type="radio"
+              name="numbers"
+              id="I-do"
+              value="I-do"
+              required
+            />
+            <label for="I-do">I do</label><br />
+            <input
+              type="radio"
+              name="numbers"
+              id="I-do-not"
+              value="I-do-not"
+              required
+            />
+            <label for="I-do-not">I don't</label><br />
+          </div>
+        </ol>
+        <center><input type="submit" value="SUBMIT" /></center>
+      </form>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div></div>
+        <div><a href="courses.html">Course Plans</a></div>
+        <div><a href="#">Resources</a></div>
+        <div><img src="images/logo txt 1.png" alt="" /></div>
+        <div><a href="aboutus.html">About Us</a></div>
+        <div><a href="aboutus.html">Our Tutors</a></div>
+        <div></div>
+      </div>
+      <div class="divider"><hr /></div>
+      <center>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100086155039228"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://instagram.com/vephla.ng?igshid=YmMyMTA2M2Y="
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://twitter.com/VephlaHQ?t=eWsd6NLj4toXHiRJcU8W3w&s=08"
+            class="fa fa-twitter"
+          ></a>
+        </div>
+      </center>
+      <div class="privacy">
+        <p>&#169; 2010 - 2020 <a href="#">Privacy & Terms</a></p>
+      </div>
+    </footer>
+
+    <script>
+      function signIn() {
+        window.location.href = "signinpage.html";
+      }
+
+      function register() {
+        window.location.href = "registerpage.html";
+      }
+    </script>
+  </body>
+</html>

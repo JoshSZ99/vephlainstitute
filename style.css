@@ -1,0 +1,886 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+  }
+  header {
+    display: flex;
+    gap: 45px;
+    background-color: #161616;
+  }
+  header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 38px;
+  }
+  header ul a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  header img {
+    width: 160px;
+    height: 80px;
+  }
+  header ul a:hover {
+    color: gray;
+  }
+  .flink {
+    color: #ed212c;
+    margin-left: 0;
+  }
+  .flink:hover {
+    color: white;
+  }
+  .empty {
+    width: 160px;
+  }
+  .button1 {
+    background: none;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .button1:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  .button2 {
+    background: #ed212c;
+    border: 1px solid #ed212c;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .button2:hover {
+    background: none;
+    border: 1px solid white;
+  }
+  header button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 23px;
+    padding: 10px 7px;
+    color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    header {
+      display: block;
+    }
+    header ul {
+      gap: 5px;
+      margin-left: 10px;
+    }
+    header ul a {
+      font-size: 8px;
+    }
+    header button {
+      font-size: 8px;
+      padding: 4px 3px;
+      margin-left: 18%;
+      margin-bottom: 15px;
+    }
+    header img {
+      margin-left: 30%;
+      margin-bottom: -40px;
+    }
+  }
+  
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .empty {
+      width: 350px;
+    }
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .empty {
+      width: 450px;
+    }
+  }
+  @media (min-width: 1921px) {
+    .empty {
+      width: 800px;
+    }
+  }
+  
+  /* main style */
+  .cont {
+    background: black;
+  }
+  .hero {
+    background-image: url("https://res.cloudinary.com/dcixuz7p1/image/upload/v1665949216/img4_re4zt3.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  }
+  .hero h1 {
+    position: absolute;
+    left: 445px;
+    text-align: center;
+    top: 270px;
+    color: white;
+    font-size: 56px;
+    line-height: 1;
+  }
+  .hero p {
+    position: absolute;
+    left: 530px;
+    text-align: center;
+    top: 390px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .icon {
+    padding: 10px 0px;
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+  }
+  input {
+    padding: 14px 2px 10px 2px;
+    width: 390px;
+    margin-left: -10px;
+    border: none;
+  }
+  .input-icons {
+    position: relative;
+    margin-left: 450px;
+    margin-top: -270px;
+  }
+  .input-icons i {
+    position: relative;
+    background-color: white;
+    border-radius: 7px 0px 0px 7px;
+    padding: 14px 0px;
+    color: rgb(116, 116, 116, 0.6);
+  }
+  input:focus {
+    outline: none;
+  }
+  .input-icons button {
+    border: 2px solid #ed212c;
+    background: #ed212c;
+    padding: 7px 34px;
+    border-radius: 0px 7px 7px 0px;
+    color: white;
+    font-size: 18px;
+    margin-top: 0px;
+    cursor: pointer;
+    margin-left: -28px;
+  }
+  .acc {
+    position: relative;
+    margin-top: -28px;
+    margin-left: 610px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: white;
+  }
+  .acc a {
+    color: red;
+    text-decoration: underline;
+  }
+  ::placeholder {
+    color: rgb(116, 116, 116, 0.6);
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      height: 180px;
+      width: 100%;
+    }
+    .hero h1 {
+      position: absolute;
+      left: 100px;
+      text-align: center;
+      top: 220px;
+      color: white;
+      font-size: 20px;
+      line-height: 1;
+    }
+    .hero p {
+      position: absolute;
+      left: 32%;
+      text-align: center;
+      top: 267px;
+      color: white;
+      font-size: 6px;
+    }
+    .icon {
+      padding: 5px 0px;
+      color: gray;
+      min-width: 20px;
+      text-align: center;
+    }
+    input {
+      padding: 0px 1px 0px 1px;
+      width: 150px;
+      margin-left: -10px;
+      border: none;
+    }
+    .input-icons {
+      position: relative;
+      margin-left: 100px;
+      margin-top: -81px;
+    }
+    .input-icons i {
+      position: relative;
+      background-color: white;
+      border-radius: 10px 0px 0px 10px;
+      padding: 7px 4px 5px 4px;
+      font-size: 8px;
+    }
+    ::placeholder {
+      font-size: 6px;
+    }
+    .input-icons button {
+      border: 2px solid #ed212c;
+      background: #ed212c;
+      padding: 4px 12px 1px 12px;
+      border-radius: 15px;
+      color: white;
+      font-size: 8px;
+      margin-top: 0px;
+      cursor: pointer;
+      margin-left: -28px;
+    }
+    .acc {
+      position: relative;
+      margin-top: -12px;
+      margin-left: 150px;
+      font-size: 6px;
+      text-decoration: underline;
+      color: white;
+    }
+    .acc a {
+      color: #ed212c;
+      text-decoration: underline;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    .hero h1 {
+      left: 35%;
+    }
+    .hero p {
+      left: 40%;
+    }
+    .input-icons {
+      margin-left: 35%;
+    }
+    .acc {
+      margin-left: 45%;
+    }
+    .input-icons i {
+      position: relative;
+      background-color: white;
+      /* border-radius: 10px 0px 0px 10px; */
+      padding: 16px 4px 13px 4px;
+      /* font-size: 8px; */
+    }
+  }
+  
+  .secondsec {
+    padding: 85px 48px 90px 88px;
+    margin-top: 150px;
+  }
+  
+  .secondsec div h1 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .grid2 img {
+    height: 300px;
+    width: 350px;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .grid2 div h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .grid2 div p {
+    margin-bottom: 10px;
+  }
+  .grid1 {
+    border: 1px solid white;
+    box-shadow: 2px 3px 5px rgb(218, 216, 216);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 9px;
+  }
+  .checked {
+    color: orange;
+  }
+  .secondsec div button {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding: 12px;
+    border: 1px solid #ed212c;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+    width: 190px;
+    color: white;
+    background-color: #ed212c;
+  }
+  .secondsec div button:hover {
+    background-color: white;
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  
+  @media (max-width: 600px) {
+    .secondsec {
+      padding: 85px 40px 90px 30px;
+      margin-top: -30px;
+    }
+    .grid2 {
+      display: block;
+    }
+    .grid2 img {
+      height: 150px;
+      width: 220px;
+    }
+    .grid2 div h2 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 15px;
+    }
+    .grid2 div p {
+      margin-bottom: 5px;
+      font-size: 11px;
+    }
+    .grid1 {
+      border: 1px solid white;
+      box-shadow: 2px 3px 5px rgb(218, 216, 216);
+      border-radius: 10px;
+      padding: 10px;
+      padding-bottom: 0;
+      margin: 9px;
+    }
+    .secondsec div button:hover {
+      background-color: white;
+      border: 1px solid #ed212c;
+      color: #ed212c;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    .grid2 img {
+      height: 350px;
+      width: 420px;
+    }
+  }
+  
+  .thirdsec h3 {
+    padding: 80px 48px 55px 88px;
+    color: white;
+    line-height: 1.3;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+  .thirdsec h3 button {
+    width: 150px;
+    padding: 10px;
+    background-color: #ed212c;
+    color: white;
+    border: 1px solid #ed212c;
+    border-radius: 10px;
+  }
+  .thirdsec h3 button:hover {
+    background-color: rgb(2, 2, 31);
+    border: 1px solid white;
+    color: white;
+  }
+  .thirdsec {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(2, 2, 31);
+  }
+  .thirdsec img {
+    width: 100%;
+    height: 355px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .thirdsec {
+      display: block;
+    }
+    .thirdsec h3 {
+      padding: 50px 28px 55px 28px;
+      color: white;
+      line-height: 1.3;
+      font-weight: lighter;
+      letter-spacing: 2px;
+    }
+    .thirdsec img {
+      width: 400px;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .forthsec {
+    padding: 80px 48px 55px 88px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .forthsec h5 {
+    color: rgba(0, 0, 80, 0.8);
+    font-size: 24px;
+    font-weight: lighter;
+    padding-top: 10px;
+    cursor: default;
+  }
+  @media (max-width: 600px) {
+    .forthsec {
+      display: block;
+      padding: 5px;
+    }
+    .forthsec img {
+      margin-top: 50px;
+    }
+  }
+  
+  .fifthsec {
+    padding: 20px 3px 55px 0px;
+    background-color: #f3f3f3;
+  }
+  .fifthsec h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    margin-right: 30px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container2 {
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px 14px;
+    margin-top: -22px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    margin-left: 10px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(220, 220, 220);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #dfdfdf;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media (max-width: 600px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px;
+    }
+    .mySlides img {
+      margin-right: 5px;
+    }
+    .fifthsec {
+      padding-left: 10px;
+    }
+    .fifthsec h1 {
+      font-size: 14px;
+    }
+  }
+  
+  .sixthsec {
+    background-color: rgb(2, 2, 31);
+  }
+  .sixthsec h2 {
+    color: white;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 24px;
+  }
+  .sixthsec h5 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .sixthsubsec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 0px;
+  }
+  .sixthsubsec h4 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .sixthsubsec p {
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+  }
+  
+  @media (max-width: 600px) {
+    .sixthsubsec {
+      display: block;
+    }
+    .sixthsec {
+      padding-bottom: 1px;
+    }
+  }
+  
+  .seventhsec {
+    padding: 30px 48px 55px 88px;
+  }
+  .seventhsec h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .seventhsec p {
+    background-color: rgba(253, 218, 223, 0.1);
+    margin-right: 25px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+  .seventhsec p img {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  .eightsec {
+    padding: 30px 48px 55px 88px;
+    background-color: #f3f3f3;
+  }
+  .eightsec h4 {
+    text-align: center;
+    color: #ed212c;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .eightsec button {
+    background-color: #ed212c;
+    padding: 10px;
+    color: white;
+    border: 1px solid #ed212c;
+    border-radius: 10px;
+    width: 90px;
+    cursor: pointer;
+  }
+  .eightsec button:hover {
+    border: 1px solid #ed212c;
+    background-color: white;
+    color: #ed212c;
+  }
+  @media (max-width: 600px) {
+    .seventhsec p {
+      font-size: 12px;
+    }
+    .seventhsec {
+      padding: 5px 20px 55px 20px;
+    }
+    .seventhsec p img {
+      height: 15px;
+      width: 15px;
+      float: right;
+      margin-right: 5px;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+  }
+  
+  .ninthsec {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: white;
+  }
+  .ninthsec h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: #0d0d22;
+    padding-bottom: 20px;
+  }
+  .ninthsec p {
+    text-align: center;
+    opacity: 0.5;
+    padding-bottom: 7px;
+  }
+  input {
+    margin-top: 35px;
+  }
+  input[type="email"] {
+    border: 1px solid #c1c1c1;
+    border-left: none;
+    padding: 17px 0px;
+    /* border-radius: 0px 8px 8px 0px; */
+  }
+  .icon2 {
+    border: 1px solid #c1c1c1;
+    padding: 18px 0px 20px 0px;
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+    border-right: none;
+    border-radius: 8px 0px 0px 8px;
+  }
+  .ninthsec button {
+    background-color: #ed212c;
+    color: white;
+    border: 1px solid #ed212c;
+    padding: 16px 17px 17px 17px;
+    margin-left: -10px;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .ninthsec button:hover {
+    background-color: white;
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  @media (max-width: 600px) {
+    .ninthsec {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 9px;
+    }
+    .ninthsec p {
+      padding-bottom: 0px;
+    }
+    input[type="email"] {
+      border: 1px solid #c1c1c1;
+      border-left: none;
+      padding: 5px 0px;
+      /* border-radius: 0px 8px 8px 0px; */
+    }
+    .icon2 {
+      border: 1px solid #c1c1c1;
+      padding: 11px 0px 10px 0px;
+      color: gray;
+      min-width: 50px;
+      text-align: center;
+      border-right: none;
+      border-radius: 8px 0px 0px 8px;
+    }
+    .ninthsec button {
+      background-color: #ed212c;
+      color: white;
+      border: 1px solid #ed212c;
+      padding: 5px 13px 5px 13px;
+      margin-left: -10px;
+      border-radius: 0px 8px 8px 0px;
+    }
+    ::placeholder {
+      font-size: 9px;
+    }
+  }
+  
+  /* footer style */
+  footer {
+    background-color: rgb(2, 2, 31);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 15% 12% 12% 22% 12% 12% 15%;
+    text-align: center;
+    padding: 70px 140px 40px 140px;
+  }
+  .grid a {
+    color: white;
+    text-decoration: none;
+  }
+  .grid a:hover {
+    opacity: 0.4;
+  }
+  .grid img {
+    margin-top: -20px;
+  }
+  .divider {
+    margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0.3;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 5px 35px 5px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: gray;
+    color: rgb(2, 2, 31);
+    border-radius: 50%;
+  }
+  .fa-instagram {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .privacy {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+  }
+  .privacy a {
+    color: gray;
+    text-decoration: none;
+  }
+  .privacy a:hover {
+    opacity: 0.5;
+  }
+  @media (max-width: 600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 30% 35% 35%;
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+    }
+    .grid a {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      margin-right: 25px;
+    }
+    .grid a:hover {
+      opacity: 0.4;
+    }
+    .grid img {
+      margin-top: -20px;
+      width: 50px;
+      height: 20px;
+    }
+    .divider {
+      margin-left: 20px;
+      margin-right: 20px;
+      opacity: 0.3;
+    }
+  
+    .fa {
+      font-size: 6px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px 5px 15px 5px;
+    }
+    .privacy {
+      font-size: 10px;
+    }
+  }
+  

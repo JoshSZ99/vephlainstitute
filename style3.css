@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+  }
+  header {
+    display: flex;
+    gap: 45px;
+    background-color: #161616;
+  }
+  header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 38px;
+  }
+  header ul a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  header img {
+    width: 160px;
+    height: 80px;
+  }
+  header ul a:hover {
+    color: gray;
+  }
+  .flink {
+    color: #ed212c;
+    margin-left: 0;
+  }
+  .flink:hover {
+    color: white;
+  }
+  .empty {
+    width: 160px;
+  }
+  .button1 {
+    background: none;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .button1:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  .button2 {
+    background: #ed212c;
+    border: 1px solid #ed212c;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .button2:hover {
+    background: none;
+    border: 1px solid white;
+  }
+  header button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 23px;
+    padding: 10px 7px;
+    color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    header {
+      display: block;
+    }
+    header ul {
+      gap: 5px;
+      margin-left: 10px;
+    }
+    header ul a {
+      font-size: 8px;
+    }
+    header button {
+      font-size: 8px;
+      padding: 4px 3px;
+      margin-left: 18%;
+      margin-bottom: 15px;
+    }
+    header img {
+      margin-left: 30%;
+      margin-bottom: -40px;
+    }
+  }
+  
+  @media (min-width: 1367px) and (max-width: 1599px) {
+    .empty {
+      width: 350px;
+    }
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .empty {
+      width: 450px;
+    }
+  }
+  @media (min-width: 1921px) {
+    .empty {
+      width: 800px;
+    }
+  }
+  
+  /* main style */
+  .main1 {
+    width: 1000px;
+    margin: 60px 150px 100px 200px;
+    /* margin-top: 100px; */
+    border: 1px solid rgb(221, 216, 216);
+    box-shadow: 2px 3px 5px gray;
+  }
+  .main1 div h1 {
+    margin-left: 60px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+  }
+  .main1 form {
+    margin-right: 50px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  .grida {
+    margin-right: 18px;
+    margin-bottom: 30px;
+  }
+  .gridb {
+    margin-left: 18px;
+    margin-bottom: 30px;
+  }
+  input[type="text"] {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+  }
+  input[type="email"] {
+    width: 857px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    margin-bottom: 30px;
+  }
+  input[type="tel"] {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+  }
+  #time {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #course {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #gender {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #age {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #education {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #hear {
+    width: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(206, 206, 206);
+  }
+  #about {
+    width: 857px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 7px;
+    color: rgb(128, 128, 128);
+  }
+  input[type="submit"] {
+    width: 857px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    border-radius: 7px;
+    color: white;
+    background-color: #ed212c;
+    cursor: pointer;
+    border: 1px solid #ed212c;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin-top: 30px;
+  }
+  input[type="submit"]:hover {
+    border: 1px solid #ed212c;
+    color: #ed212c;
+    background-color: white;
+  }
+  ::placeholder {
+    opacity: 0.4;
+  }
+  option {
+    color: black;
+    font-size: 25px;
+  }
+  
+  @media (max-width: 600px) {
+    .main1 {
+      width: 300px;
+      margin: 20px 30px 30px 40px;
+      /* margin-top: 100px; */
+      border: 1px solid rgb(221, 216, 216);
+      box-shadow: 2px 3px 5px gray;
+    }
+    .main1 div h1 {
+      margin-left: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-right: 30px;
+      font-size: 20px;
+    }
+    .main1 form {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .grida {
+      margin-right: 7px;
+      margin-bottom: 30px;
+    }
+    .gridb {
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    input[type="text"] {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+    }
+    input[type="email"] {
+      width: 97%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      margin-bottom: 30px;
+    }
+    input[type="tel"] {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+    }
+    #time {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #course {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #gender {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #age {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #education {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #hear {
+      width: 46%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(206, 206, 206);
+    }
+    #about {
+      width: 97%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      border: 1px solid rgb(179, 179, 179);
+      border-radius: 7px;
+      color: rgb(128, 128, 128);
+    }
+    input[type="submit"] {
+      width: 97%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 8px;
+      border-radius: 7px;
+      color: white;
+      background-color: #ed212c;
+      cursor: pointer;
+      border: 1px solid #ed212c;
+      font-weight: bolder;
+      font-size: 12px;
+      margin-bottom: 45px;
+      margin-top: 30px;
+    }
+    ::placeholder {
+      opacity: 0.4;
+    }
+    option {
+      color: black;
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    .main1 {
+      width: 1000px;
+      margin: 60px 150px 100px 380px;
+      /* margin-top: 100px; */
+      border: 1px solid rgb(221, 216, 216);
+      box-shadow: 2px 3px 5px gray;
+    }
+  }
+  
+  /* footer style */
+  footer {
+    background-color: rgb(2, 2, 31);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 15% 12% 12% 22% 12% 12% 15%;
+    text-align: center;
+    padding: 70px 140px 40px 140px;
+  }
+  .grid a {
+    color: white;
+    text-decoration: none;
+  }
+  .grid a:hover {
+    opacity: 0.4;
+  }
+  .grid img {
+    margin-top: -20px;
+  }
+  .divider {
+    margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0.3;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 5px 35px 5px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: gray;
+    color: rgb(2, 2, 31);
+    border-radius: 50%;
+  }
+  .fa-instagram {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: rgb(2, 2, 31);
+    color: gray;
+    border-radius: 50%;
+  }
+  .privacy {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+  }
+  .privacy a {
+    color: gray;
+    text-decoration: none;
+  }
+  .privacy a:hover {
+    opacity: 0.5;
+  }
+  @media (max-width: 600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 30% 35% 35%;
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+    }
+    .grid a {
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      margin-right: 25px;
+    }
+    .grid a:hover {
+      opacity: 0.4;
+    }
+    .grid img {
+      margin-top: -20px;
+      width: 50px;
+      height: 20px;
+    }
+    .divider {
+      margin-left: 20px;
+      margin-right: 20px;
+      opacity: 0.3;
+    }
+  
+    .fa {
+      font-size: 6px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px 5px 15px 5px;
+    }
+    .privacy {
+      font-size: 10px;
+    }
+  }
+  
