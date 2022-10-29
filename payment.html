@@ -26,7 +26,7 @@
 
       <div>
         <ul>
-          <li><a href="index.html" class="flink">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="courses.html">Courses & Plans</a></li>
           <li><a href="#">Free Resources</a></li>
@@ -42,7 +42,25 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <h1>Payment Type</h1>
+      <div class="pay-method">
+        <img src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666803559/Frame_39_gdlkix.png" alt="">
+        <img src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666803559/Frame_40_hfjxhs.png" alt="">
+        <img src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666803559/Frame_41_ucfszl.png" alt="">
+        <img src="https://res.cloudinary.com/dcixuz7p1/image/upload/v1666803559/Frame_42_uawroq.png" alt="">
+      </div>
+      <h1>Payment Details</h1>
+      <form action="">
+      <input type="text" name="name" id="name" placeholder="Cardholder Name" required><br>
+      <input type="number" name="cardnum" id="cardnum" placeholder="Card Number" required><br>
+      <input type="number" name="expiry" id="expiry" placeholder="Month/Year" required>
+      <input type="number" name="cvv" id="cvv" placeholder="CVV" required minlength="3" maxlength="3" size="3"><br>
+      <p>By clicking 'Payment', you agree to our terms of service and conditions.</p>
+      <button onclick="register()">Back</button>
+      <input type="submit" value="Payment">
+    </form>
+    </main>
 
     <footer>
       <div class="grid">
