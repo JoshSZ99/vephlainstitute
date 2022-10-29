@@ -1,92 +1,268 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Poppins";
-  }
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  display: flex;
+  gap: 45px;
+  background-color: #161616;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding-top: 38px;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+header img {
+  width: 160px;
+  height: 80px;
+}
+header ul a:hover {
+  color: gray;
+}
+.flink {
+  color: #ed212c;
+  margin-left: 0;
+}
+.flink:hover {
+  color: white;
+}
+.empty {
+  width: 160px;
+}
+.button1 {
+  background: none;
+  border: 1px solid white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button1:hover {
+  border: 1px solid #ed212c;
+  color: #ed212c;
+}
+.button2 {
+  background: #ed212c;
+  border: 1px solid #ed212c;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.button2:hover {
+  background: none;
+  border: 1px solid white;
+}
+header button {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 23px;
+  padding: 10px 7px;
+  color: white;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
   header {
-    display: flex;
-    gap: 45px;
-    background-color: #161616;
+    display: block;
   }
   header ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-    padding-top: 38px;
+    gap: 5px;
+    margin-left: 10px;
   }
   header ul a {
-    color: white;
-    text-decoration: none;
-    margin-left: 8px;
-    font-size: 15px;
-    font-weight: lighter;
-  }
-  header img {
-    width: 160px;
-    height: 80px;
-  }
-  header ul a:hover {
-    color: gray;
-  }
-  .flink {
-    color: #ed212c;
-    margin-left: 0;
-  }
-  .flink:hover {
-    color: white;
-  }
-  .empty {
-    width: 200px;
-  }
-  .button1 {
-    background: none;
-    border: 1px solid white;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .button1:hover {
-    border: 1px solid #ed212c;
-    color: #ed212c;
-  }
-  .button2 {
-    background: #ed212c;
-    border: 1px solid #ed212c;
-    padding-left: 27px;
-    padding-right: 27px;
-  }
-  .button2:hover {
-    background: none;
-    border: 1px solid white;
+    font-size: 8px;
   }
   header button {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 23px;
-    padding: 10px 7px;
-    color: white;
+    font-size: 8px;
+    padding: 4px 3px;
+    margin-left: 18%;
+    margin-bottom: 15px;
+  }
+  header img {
+    margin-left: 30%;
+    margin-bottom: -40px;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1599px) {
+  .empty {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .empty {
+    width: 450px;
+  }
+}
+@media (min-width: 1921px) {
+  .empty {
+    width: 800px;
+  }
+}
+
+  /* main style */
+  main{
+    margin: 150px 350px 150px 470px;
+  }
+  .pay-method{
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .pay-method img{
+    margin-right: 10px;
+  }
+  form{
+    max-width: 100%;
+  }
+  input[type=text]{
+    width: 65%;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
   }
-  @media (max-width: 600px) {
-    header {
-      display: block;
+  input[type=number]{
+    width: 65%;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+  }
+  #expiry{
+    width: 31%;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    margin-right: 2%;
+  }
+  #cvv{
+    width: 31%;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    margin-left: 3px;
+  }
+  ::placeholder{
+    opacity: 0.4;
+  }
+  form p{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  form button{
+    width: 24%;
+    padding: 15px 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+  }
+  form button:hover{
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+  input[type=submit]{
+    width: 40%;
+    margin-left: 4px;
+    padding: 15px 10px;
+    border: 1px solid #ed212c;
+    color: white;
+    background-color: #ed212c;
+    border-radius: 10px;
+  }
+  input[type=submit]:hover{
+    background-color: white;
+    border: 1px solid #ed212c;
+    color: #ed212c;
+  }
+
+  @media (max-width:600px) {
+    main{
+      margin: 50px 50px 100px 80px;
     }
-    header ul {
-      gap: 5px;
+    main h1{
+      font-size: 15px;
     }
-    header ul a {
-      font-size: 8px;
+    .pay-method{
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
-    header button {
-      font-size: 8px;
-      padding: 4px 3px;
-      margin-left: 18%;
+    .pay-method img{
+      margin-right: 5px;
+      width: 50px;
+      height: 30px;
+    }
+    input[type=text]{
+      width: 85%;
+      padding: 10px 7px;
+      margin-top: 10px;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 10px;
+    }
+    input[type=number]{
+      width: 85%;
+      padding: 10px 7px;
+      margin-top: 10px;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 10px;
+    }
+    #expiry{
+      width: 40%;
+      padding: 10px 7px;
+      margin-top: 10px;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 10px;
+      margin-right: 2%;
+    }
+    #cvv{
+      width: 40%;
+      padding: 10px 7px;
+      margin-top: 10px;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+    ::placeholder{
+      font-size: 10px;
+    }
+    form p{
+      font-size: 7px;
+      margin-top: 15px;
       margin-bottom: 15px;
     }
-    header img {
-      margin-left: 20%;
-      margin-bottom: -40px;
+    form button{
+      width: 32%;
+      padding: 10px 7px;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 10px;
+      background-color: white;
+      font-size: 10px;
+    }
+    input[type=submit]{
+      width: 50%;
+      margin-left: 4px;
+      padding: 10px 7px;
+      border: 1px solid #ed212c;
+      color: white;
+      background-color: #ed212c;
+      border-radius: 10px;
+      font-size: 10px;
     }
   }
+
+
+
+
+
   
   /* footer style */
   footer {
