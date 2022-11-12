@@ -349,6 +349,9 @@
     margin-left: 10%;
     /* margin-right: 15%; */
     border: 10px solid white;
+    width: 370px;
+    height: 310px;
+    margin-top: 40px;
   }
   .forthsubsec p {
     text-align: center;
