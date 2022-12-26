@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Course Overview</title>
+    <link rel="stylesheet" href="style13.css" />
+    <link rel="shortcut icon" href="images/photo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+
+      <div>
+        <img src="images/logo.png" alt="logo" />
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="index.html" class="flink">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="courses.html">Courses & Plans</a></li>
+          <li><a href="#">Free Resources</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="empty"></div>
+
+      <div>
+        <button class="button1" onclick="signIn()">Sign In</button>
+        <button class="button2" onclick="register()">Register</button>
+      </div>
+    </header>
+
+    <section class="first-sec">
+      <p>
+        Become a Certified Professional Frontend Developer by learning modern
+        coding techniques.
+      </p>
+      <br />
+      <p>
+        In this course, you will be trained on basic coding skills in relevant
+        programming languages and you will be part of a team to work on a live
+        project.
+      </p>
+      <br />
+      <p>
+        This is a beginner to advance course in Frontend Development,
+        positioning you to be ready for the market.
+      </p>
+    </section>
+
+    <section class="grid-cont">
+      <div class="grid1 grid4">
+        <h1>1. INTRODUCTION</h1>
+        <p>What is Frontend Development?</p>
+        <p>CMS and IDE</p>
+        <p>Relevant Programming Languages</p>
+        <p>Job Opportunities as a Developer</p>
+      </div>
+
+      <div class="grid1 grid2">
+        <h1>2. HTML5</h1>
+        <p>
+          Introduction to HTML, Structure of an HTML Document, Adding Headings
+          and Paragraphs in a webpage, Formatting Tags, HTML Links, HTML Images,
+          HTML Semantics, HTML Forms, HTML Media, and more.
+        </p>
+      </div>
+
+      <div class="grid1">
+        <h1>3. CSS3</h1>
+        <p>
+          Pseudo classes and elements, Box and Text shadow, Display, Opacity and
+          Transparency, Overflow, Important, CSS List, CSS Grid, CSS Flex,
+          Responsive Design & Media Query, CSS Animation & Transitions, and
+          more.
+        </p>
+      </div>
+
+      <div class="grid1 grid3">
+        <h1>4. Bootstrap 5</h1>
+        <p>
+          How to add Bootstrap to your project, Bootstrap container and grid
+          system, Utilities (color, display, float, position, sizing, spacing),
+          Buttons, Cards, Carousel, Navbar and more.
+        </p>
+      </div>
+
+      <div class="grid1 grid4">
+        <h1>5. JavaScript</h1>
+        <p>
+          DOM Manipulation & Event Handling, JavaScript EcmaScript 6, ES6
+          Variables, Arrow Functions, Working with classes, Map, ES6 Conditional
+          Statement, Backticks, JSX, etc.
+        </p>
+      </div>
+
+      <div class="grid1 grid2">
+        <h1>6. PORTFOLIO BUILDING</h1>
+        <p>Recommended Project</p>
+        <p>Website Hosting</p>
+        <p>Building Live Projects</p>
+      </div>
+    </section>
+
+    <section class="reg">
+      <button onclick="registerchat()">Register for this course</button>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div></div>
+        <div><a href="courses.html">Course Plans</a></div>
+        <div><a href="#">Resources</a></div>
+        <div><img src="images/logo txt 1.png" alt="" /></div>
+        <div><a href="aboutus.html">About Us</a></div>
+        <div><a href="aboutus.html">Our Tutors</a></div>
+        <div></div>
+      </div>
+      <div class="divider"><hr /></div>
+      <center>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100086155039228"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://instagram.com/vephla.ng?igshid=YmMyMTA2M2Y="
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://twitter.com/VephlaHQ?t=eWsd6NLj4toXHiRJcU8W3w&s=08"
+            class="fa fa-twitter"
+          ></a>
+        </div>
+      </center>
+      <div class="privacy">
+        <p>&#169; 2010 - 2020 <a href="#">Privacy & Terms</a></p>
+      </div>
+    </footer>
+
+    <script>
+      function signIn() {
+        window.location.href = "signinpage.html";
+      }
+      function register() {
+        window.location.href = "registerpage.html";
+      }
+      function viewAllCourses() {
+        window.location.href = "courses.html";
+      }
+      function aboutUs() {
+        window.location.href = "aboutus.html";
+      }
+      function registerchat() {
+        window.location.href = "https://tinyurl.com/RegisterhereV";
+      }
+    </script>
+  </body>
+</html>

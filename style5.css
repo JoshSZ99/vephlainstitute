@@ -240,6 +240,7 @@
   .mid-cont button {
     float: right;
     margin-top: 70px;
+    margin-left: 30px;
     border-radius: 10px;
     padding: 10px 25px 10px 15px;
     color: blue;
@@ -298,6 +299,7 @@
     .mid-cont button {
       float: right;
       margin-top: 10px;
+      margin-left: 15px;
       border-radius: 10px;
       padding: 5px 10px 5px 10px;
       color: blue;
