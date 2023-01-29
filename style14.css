@@ -150,7 +150,7 @@ header button {
 
 @media (max-width: 600px) {
   .first-sec {
-    margin: 20px 6%;
+    margin: 20px 9%;
     padding: 20px;
     width: 80%;
     border: 1px solid white;
@@ -162,7 +162,7 @@ header button {
   }
 
   .grid-cont {
-    margin: 50px 3%;
+    margin: 50px 6%;
     display: grid;
     grid-template-columns: auto;
   }

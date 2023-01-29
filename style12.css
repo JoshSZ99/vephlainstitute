@@ -218,6 +218,9 @@ header button {
   .grid4 {
     background-color: rgb(75, 9, 75);
   }
+  .disp {
+    display: none;
+  }
   .reg button {
     margin-bottom: 50px;
     margin-left: 25%;
