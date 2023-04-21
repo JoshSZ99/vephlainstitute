@@ -115,8 +115,9 @@
     background-size: cover;
     height: 600px;
     width: 100%;
+    /* position: relative; */
   }
-  .hero h1 {
+  .hero div h1 {
     position: absolute;
     left: 445px;
     text-align: center;
@@ -194,9 +195,9 @@
       height: 180px;
       width: 100%;
     }
-    .hero h1 {
+    .hero div h1 {
       position: absolute;
-      left: 100px;
+      left: 45px;
       text-align: center;
       top: 210px;
       color: white;
