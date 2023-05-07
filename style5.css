@@ -306,7 +306,7 @@
       border: 1px solid blue;
       background: none;
       cursor: pointer;
-      font-size: 8px;
+      font-size: 7px;
     }
     .mid-cont button:hover {
       opacity: 0.6;
